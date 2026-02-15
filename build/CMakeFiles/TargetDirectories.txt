@@ -1,0 +1,4 @@
+/home/shivam/systems-playground/build/CMakeFiles/math_utils.dir
+/home/shivam/systems-playground/build/CMakeFiles/main.dir
+/home/shivam/systems-playground/build/CMakeFiles/edit_cache.dir
+/home/shivam/systems-playground/build/CMakeFiles/rebuild_cache.dir
