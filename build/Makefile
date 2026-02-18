@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named math_utils
-
-# Build rule for target.
-math_utils: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math_utils
-.PHONY : math_utils
-
-# fast build rule for target.
-math_utils/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/build
-.PHONY : math_utils/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -166,30 +153,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/math_utils.o: src/math_utils.cpp.o
-.PHONY : src/math_utils.o
-
-# target to build an object file
-src/math_utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/math_utils.cpp.o
-.PHONY : src/math_utils.cpp.o
-
-src/math_utils.i: src/math_utils.cpp.i
-.PHONY : src/math_utils.i
-
-# target to preprocess a source file
-src/math_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/math_utils.cpp.i
-.PHONY : src/math_utils.cpp.i
-
-src/math_utils.s: src/math_utils.cpp.s
-.PHONY : src/math_utils.s
-
-# target to generate assembly for a file
-src/math_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/math_utils.cpp.s
-.PHONY : src/math_utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -199,13 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... math_utils"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/math_utils.o"
-	@echo "... src/math_utils.i"
-	@echo "... src/math_utils.s"
 .PHONY : help
 
 

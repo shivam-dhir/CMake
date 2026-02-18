@@ -2,6 +2,12 @@
 #include "math_utils.hpp"
 
 int main(){
-	std::cout << "3 + 4 = " << math_utils::add(3, 4) << std::endl;
+	int x = 3;
+	int* p = new int(69);
+	
+	std::cout << "x address: " << &x << std::endl;
+	std::cout << "p address: " << p << std::endl;
+	
+	delete p;
 	return 0;
 }
